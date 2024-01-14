@@ -61,7 +61,7 @@ const MySkills = () => {
               </p>
             </div>
             {/* setting the box position */}
-            <div className="w-1/2 md:w-full h-24 bg-blue absolute left-0 top-2 z-[-1]" />
+            <div className="w-3/5 md:w-full h-32 md:h-24 bg-blue absolute left-0 top-2 z-[-1]" />
           </div>
           <div className="flex flex-wrap justify-start gap-2">
             <Skill text={"Java"} color={"blue"} />
@@ -91,7 +91,7 @@ const MySkills = () => {
               </p>
             </div>
             {/* setting the box position*/}
-            <div className="w-1/2 md:w-3/4 h-24 bg-red absolute left-0 top-2 z-[-1]" />
+            <div className="w-3/5 md:w-3/4 h-24 bg-red absolute left-0 top-2 z-[-1]" />
           </div>
           <div className="flex flex-wrap justify-start gap-2">
             <Skill text={"React"} color={"red"} />
@@ -124,7 +124,7 @@ const MySkills = () => {
               </p>
             </div>
             {/* setting the box position , , , , ,  */}
-            <div className="w-1/2 md:w-3/4 h-24 bg-yellow absolute left-0 top-2 z-[-1]" />
+            <div className="w-3/5 md:w-3/4 h-24 bg-yellow absolute left-0 top-2 z-[-1]" />
           </div>
           <div className="flex flex-wrap justify-start gap-2">
             <Skill text={"Git"} color={"yellow"} />

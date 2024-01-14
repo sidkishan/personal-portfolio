@@ -71,7 +71,7 @@ const Project = ({ title, image, obj }) => {
   const projectTitle = title.split(" ").join("").toLowerCase();
   const { tech, details, github, live } = obj;
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative md:mb-0 mb-10">
       <div className={overlayStyles}>
         <p className=" text-center text-xl font-playfair font-semibold">
           {title}
@@ -134,9 +134,9 @@ const Projects = () => {
         </p>
       </motion.div>
       {/* LIST YOUR PROJECTS */}
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-10">
         <motion.div
-          className="sm:grid sm:grid-cols-3 sm:gap-8 gap-8"
+          className="! sm:grid sm:grid-cols-3 sm:gap-8 gap-8" //sm:gap-8 gap-8
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
 const WorkExperience = () => {
-  const workExStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
+  const workExStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end px-8 py-6 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
   return (
     <section id="workexp" className="pt-28 pb-16">
       {/* HEADING */}
@@ -17,10 +17,10 @@ const WorkExperience = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl md-5 text-red">
+        <p className="font-playfair font-semibold text-4xl md-5 text-red ">
           WORK EXPERIENCE
         </p>
-        <LineGradient width={"w-4/5"} />
+        <LineGradient width={"w-11/12 md:w-4/5"} />
         <p className="mt-10 font-thin">
           Below are my journey so far as a working professional.
         </p>
@@ -28,7 +28,7 @@ const WorkExperience = () => {
       {/* LIST YOUR WORK EXP HERE */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className={`bg-blue ${workExStyles} before:content-job1 `}
+          className={`bg-blue ${workExStyles} before:content-job1`}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

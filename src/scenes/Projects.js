@@ -73,10 +73,11 @@ const Project = ({ title, image, obj }) => {
   return (
     <motion.div variants={projectVariant} className="relative md:mb-0 mb-10">
       <div className={overlayStyles}>
-        <p className=" text-center text-xl font-playfair font-semibold">
+        <p className=" text-center text-xl font-playfair font-semibold md:pt-0 pt-16">
           {title}
         </p>
-        <p className="">
+
+        <p className="pb-2">
           <span className="font-semibold">Tech used: </span>
           {tech}
         </p>
